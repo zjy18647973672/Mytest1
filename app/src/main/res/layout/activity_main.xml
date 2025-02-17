@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word1"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y1"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word2"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y2"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word3"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y3"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word4"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y4"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word5"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y5"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word6"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y6"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word7"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y7"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word8"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y8"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

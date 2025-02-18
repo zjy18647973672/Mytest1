@@ -271,11 +271,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 is6clicked = 0;
                 is7clicked = 0;
                 is8clicked = 0;
-//                if (mtv1 != null) {
-//                    mtv1.setText("Hello, World!");
-//                } else {
-//                    Log.e("Error", "TextView is null");
-//                }
+                if (mtv1 != null) {
+                    mtv1.setText("Hello, World!");
+                } else {
+                    Log.e("Error", "TextView is null");
+                }
             }
         }
     }

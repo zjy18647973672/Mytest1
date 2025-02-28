@@ -315,6 +315,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Update();
             }
         }
+        if (v.getId() == R.id.btn_y9) {
+            Log.d(TAG,"*** button1 is clicked ***");
+            if(is9clicked == 1) {
+                mbtn_n9.setBackgroundColor(Color.parseColor("#0FFFFF"));
+            }
+            mbtn_y9.setBackgroundColor(Color.parseColor("#FF4081"));
+            is9clicked = 1;
+            if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
+                Update();
+            }
+        }
         if (v.getId() == R.id.btn_n9) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is9clicked == 1) {
@@ -322,6 +333,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             mbtn_n9.setBackgroundColor(Color.parseColor("#FF4081"));
             is9clicked = 1;
+            if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
+                Update();
+            }
+        }
+        if (v.getId() == R.id.btn_y0) {
+            Log.d(TAG,"*** button1 is clicked ***");
+            if(is0clicked == 1) {
+                mbtn_n0.setBackgroundColor(Color.parseColor("#0FFFFF"));
+            }
+            mbtn_y0.setBackgroundColor(Color.parseColor("#FF4081"));
+            is0clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
                 Update();
             }

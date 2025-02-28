@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mbtn_y8;
     private Button mbtn_n7;
     private Button mbtn_n8;
+    private Button mbtn_y9;
+    private Button mbtn_y0;
+    private Button mbtn_n9;
+    private Button mbtn_n0;
     private int is1clicked = 0;
     private int is2clicked = 0;
     private int is3clicked = 0;
@@ -38,7 +43,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int is6clicked = 0;
     private int is7clicked = 0;
     private int is8clicked = 0;
+    private int is9clicked = 0;
+    private int is0clicked = 0;
+
     private TextView mtv1;
+    private TextView mtv2;
+    private TextView mtv3;
+    private TextView mtv4;
+    private TextView mtv5;
+    private TextView mtv6;
+    private TextView mtv7;
+    private TextView mtv8;
+    private TextView mtv9;
+    private TextView mtv0;
 
 
     @Override
@@ -47,7 +64,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         mtv1 = findViewById(R.id.word1);
-        mtv1.setText("apple");
+        mtv2 = findViewById(R.id.word2);
+        mtv3 = findViewById(R.id.word3);
+        mtv4 = findViewById(R.id.word4);
+        mtv5 = findViewById(R.id.word5);
+        mtv6 = findViewById(R.id.word6);
+        mtv7 = findViewById(R.id.word7);
+        mtv8 = findViewById(R.id.word8);
+        mtv9 = findViewById(R.id.word9);
+        mtv0 = findViewById(R.id.word0);
 
         mbtn_y1 = findViewById(R.id.btn_y1);
         mbtn_y1.setOnClickListener(this);
@@ -97,14 +122,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mbtn_n8 = findViewById(R.id.btn_n8);
         mbtn_n8.setOnClickListener(this);
 
-//        mThread = new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                Capture();
-//            }
-//        });
-//        mThread.setDaemon(true); // 设置为守护线程
-//        mThread.start();
+        mbtn_y9 = findViewById(R.id.btn_y9);
+        mbtn_y9.setOnClickListener(this);
+
+        mbtn_y0 = findViewById(R.id.btn_y0);
+        mbtn_y0.setOnClickListener(this);
+
+        mbtn_n9 = findViewById(R.id.btn_n9);
+        mbtn_n9.setOnClickListener(this);
+
+        mbtn_n0 = findViewById(R.id.btn_n0);
+        mbtn_n0.setOnClickListener(this);
+
     }
 
 
@@ -282,6 +311,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             mbtn_n8.setBackgroundColor(Color.parseColor("#FF4081"));
             is8clicked = 1;
+            if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
+                Update();
+            }
+        }
+        if (v.getId() == R.id.btn_n9) {
+            Log.d(TAG,"*** button1 is clicked ***");
+            if(is9clicked == 1) {
+                mbtn_y9.setBackgroundColor(Color.parseColor("#0FFFFF"));
+            }
+            mbtn_n9.setBackgroundColor(Color.parseColor("#FF4081"));
+            is9clicked = 1;
+            if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
+                Update();
+            }
+        }
+        if (v.getId() == R.id.btn_n0) {
+            Log.d(TAG,"*** button1 is clicked ***");
+            if(is0clicked == 1) {
+                mbtn_y0.setBackgroundColor(Color.parseColor("#0FFFFF"));
+            }
+            mbtn_n0.setBackgroundColor(Color.parseColor("#FF4081"));
+            is0clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1) {
                 Update();
             }

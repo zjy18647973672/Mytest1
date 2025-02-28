@@ -270,4 +270,71 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word9"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y9"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/word0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WORD"
+            android:layout_marginTop="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_y0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:layout_toRightOf="@id/word0"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_n0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="false"
+            android:layout_toRightOf="@id/btn_y0"
+            android:background="#0FFFFF"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+
 </LinearLayout>

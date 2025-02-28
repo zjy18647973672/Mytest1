@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/word1"
             android:text="APPLE"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"/>
 
@@ -47,9 +47,9 @@
 
         <TextView
             android:id="@+id/word2"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD2"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -80,9 +80,9 @@
 
         <TextView
             android:id="@+id/word3"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD3"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -113,9 +113,9 @@
 
         <TextView
             android:id="@+id/word4"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD4"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -146,9 +146,9 @@
 
         <TextView
             android:id="@+id/word5"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD5"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -179,9 +179,9 @@
 
         <TextView
             android:id="@+id/word6"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD6"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -212,9 +212,9 @@
 
         <TextView
             android:id="@+id/word7"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD7"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -245,9 +245,9 @@
 
         <TextView
             android:id="@+id/word8"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD8"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -278,9 +278,9 @@
 
         <TextView
             android:id="@+id/word9"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD9"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -311,9 +311,9 @@
 
         <TextView
             android:id="@+id/word0"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD"
+            android:text="WORD10"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button

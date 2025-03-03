@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mtv0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -142,9 +143,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y1) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is1clicked == 1) {
-                mbtn_n1.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n1.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y1.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y1.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is1clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -153,9 +154,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n1) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is1clicked == 1) {
-                mbtn_y1.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n1.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n1.setBackgroundColor(Color.parseColor("#E9967A"));
             is1clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -164,9 +165,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y2) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is2clicked == 1) {
-                mbtn_n2.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n2.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y2.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y2.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is2clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -175,9 +176,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n2) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is2clicked == 1) {
-                mbtn_y2.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n2.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n2.setBackgroundColor(Color.parseColor("#E9967A"));
             is2clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -186,9 +187,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y3) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is3clicked == 1) {
-                mbtn_n3.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n3.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y3.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y3.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is3clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -197,9 +198,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n3) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is3clicked == 1) {
-                mbtn_y3.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y3.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n3.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n3.setBackgroundColor(Color.parseColor("#E9967A"));
             is3clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -208,9 +209,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y4) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is4clicked == 1) {
-                mbtn_n4.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n4.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y4.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y4.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is4clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -219,9 +220,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n4) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is4clicked == 1) {
-                mbtn_y4.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y4.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n4.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n4.setBackgroundColor(Color.parseColor("#E9967A"));
             is4clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -230,9 +231,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y5) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is5clicked == 1) {
-                mbtn_n5.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n5.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y5.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y5.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is5clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -241,9 +242,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n5) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is5clicked == 1) {
-                mbtn_y5.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y5.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n5.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n5.setBackgroundColor(Color.parseColor("#E9967A"));
             is5clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -252,9 +253,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y6) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is6clicked == 1) {
-                mbtn_n6.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n6.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y6.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y6.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is6clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -263,9 +264,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n6) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is6clicked == 1) {
-                mbtn_y6.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y6.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n6.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n6.setBackgroundColor(Color.parseColor("#E9967A"));
             is6clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -274,9 +275,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y7) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is7clicked == 1) {
-                mbtn_n7.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n7.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y7.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y7.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is7clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -285,9 +286,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n7) {
             Log.d(TAG,"*** button7 is clicked ***");
             if(is7clicked == 1) {
-                mbtn_y7.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y7.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n7.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n7.setBackgroundColor(Color.parseColor("#E9967A"));
             is7clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -296,9 +297,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y8) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is8clicked == 1) {
-                mbtn_n8.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n8.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y8.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y8.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is8clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -307,9 +308,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n8) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is8clicked == 1) {
-                mbtn_y8.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y8.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n8.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n8.setBackgroundColor(Color.parseColor("#E9967A"));
             is8clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -318,9 +319,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y9) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is9clicked == 1) {
-                mbtn_n9.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n9.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y9.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y9.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is9clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -329,9 +330,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n9) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is9clicked == 1) {
-                mbtn_y9.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y9.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n9.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n9.setBackgroundColor(Color.parseColor("#E9967A"));
             is9clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -340,9 +341,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_y0) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is0clicked == 1) {
-                mbtn_n0.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_n0.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_y0.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_y0.setBackgroundColor(Color.parseColor("#7FFFD4"));
             is0clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -351,9 +352,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v.getId() == R.id.btn_n0) {
             Log.d(TAG,"*** button1 is clicked ***");
             if(is0clicked == 1) {
-                mbtn_y0.setBackgroundColor(Color.parseColor("#0FFFFF"));
+                mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n0.setBackgroundColor(Color.parseColor("#FF4081"));
+            mbtn_n0.setBackgroundColor(Color.parseColor("#E9967A"));
             is0clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -367,26 +368,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     * Update  翻页，更新页面中的单词
     * */
     private void Update() {
-        mbtn_y1.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n1.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y2.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n2.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y3.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n3.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y4.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n4.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y5.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n5.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y6.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n6.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y7.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n7.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y8.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n8.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y9.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n9.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_y0.setBackgroundColor(Color.parseColor("#0FFFFF"));
-        mbtn_n0.setBackgroundColor(Color.parseColor("#0FFFFF"));
+        mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n1.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n2.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y3.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n3.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y4.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n4.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y5.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n5.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y6.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n6.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y7.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n7.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y8.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n8.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y9.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n9.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
+        mbtn_n0.setBackgroundColor(Color.parseColor("#F5F5DC"));
 
         is1clicked = 0;
         is2clicked = 0;

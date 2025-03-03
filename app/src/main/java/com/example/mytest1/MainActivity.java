@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -405,44 +406,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     * Update  翻页，更新页面中的单词
     * */
     private void Update() {
-        // 按钮状况复原（颜色复原）
-        mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n1.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n2.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y3.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n3.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y4.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n4.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y5.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n5.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y6.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n6.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y7.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n7.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y8.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n8.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y9.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n9.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
-        mbtn_n0.setBackgroundColor(Color.parseColor("#F5F5DC"));
-
-        // 按钮状态更新
-        is1clicked = 0;
-        is2clicked = 0;
-        is3clicked = 0;
-        is4clicked = 0;
-        is5clicked = 0;
-        is6clicked = 0;
-        is7clicked = 0;
-        is8clicked = 0;
-        is9clicked = 0;
-        is0clicked = 0;
-
         // 更新标识+1
         mLoop = mLoop + 1;
 
         if (mLoop != 5) {
+            Toast.makeText(this, "再接再厉！再背一页！", Toast.LENGTH_SHORT).show();
+
+            // 按钮状况复原（颜色复原）
+            mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n1.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n2.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y3.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n3.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y4.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n4.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y5.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n5.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y6.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n6.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y7.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n7.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y8.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n8.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y9.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n9.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
+            mbtn_n0.setBackgroundColor(Color.parseColor("#F5F5DC"));
+
+            // 按钮状态更新
+            is1clicked = 0;
+            is2clicked = 0;
+            is3clicked = 0;
+            is4clicked = 0;
+            is5clicked = 0;
+            is6clicked = 0;
+            is7clicked = 0;
+            is8clicked = 0;
+            is9clicked = 0;
+            is0clicked = 0;
+
             // 单词显示更新
             mtv1.setText(mWords.get(mLoop * 10).getWord());
             mtv2.setText(mWords.get(mLoop * 10 + 1).getWord());
@@ -455,8 +458,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mtv9.setText(mWords.get(mLoop * 10 + 8).getWord());
             mtv0.setText(mWords.get(mLoop * 10 + 9).getWord());
         }
+        else{
+            Toast.makeText(this, "全部背完啦！请选择新词库", Toast.LENGTH_SHORT).show();
+            mLoop--;
         }
-
-
-
+    }
 }

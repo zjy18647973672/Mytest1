@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is1clicked == 1) {
                 mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n1.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n1.setBackgroundColor(Color.parseColor("#FFA07A"));
             is1clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is2clicked == 1) {
                 mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n2.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n2.setBackgroundColor(Color.parseColor("#FFA07A"));
             is2clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is3clicked == 1) {
                 mbtn_y3.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n3.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n3.setBackgroundColor(Color.parseColor("#FFA07A"));
             is3clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is4clicked == 1) {
                 mbtn_y4.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n4.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n4.setBackgroundColor(Color.parseColor("#FFA07A"));
             is4clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -282,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is5clicked == 1) {
                 mbtn_y5.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n5.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n5.setBackgroundColor(Color.parseColor("#FFA07A"));
             is5clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -304,7 +304,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is6clicked == 1) {
                 mbtn_y6.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n6.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n6.setBackgroundColor(Color.parseColor("#FFA07A"));
             is6clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -326,7 +326,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is7clicked == 1) {
                 mbtn_y7.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n7.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n7.setBackgroundColor(Color.parseColor("#FFA07A"));
             is7clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -348,7 +348,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is8clicked == 1) {
                 mbtn_y8.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n8.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n8.setBackgroundColor(Color.parseColor("#FFA07A"));
             is8clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -370,7 +370,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is9clicked == 1) {
                 mbtn_y9.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n9.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n9.setBackgroundColor(Color.parseColor("#FFA07A"));
             is9clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();
@@ -392,7 +392,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(is0clicked == 1) {
                 mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
             }
-            mbtn_n0.setBackgroundColor(Color.parseColor("#E9967A"));
+            mbtn_n0.setBackgroundColor(Color.parseColor("#FFA07A"));
             is0clicked = 1;
             if(is1clicked == 1 && is2clicked == 1 && is3clicked == 1 && is4clicked == 1 && is5clicked == 1 && is6clicked == 1 && is7clicked == 1 && is8clicked == 1 && is9clicked == 1 && is0clicked == 1) {
                 Update();

@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -56,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView mtv8;
     private TextView mtv9;
     private TextView mtv0;
-
+    private List<Word> mWords = new ArrayList<>(50);
+    private int mLoop = 0;
 
 
     @Override
@@ -64,17 +68,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mtv1 = findViewById(R.id.word1);
-        mtv2 = findViewById(R.id.word2);
-        mtv3 = findViewById(R.id.word3);
-        mtv4 = findViewById(R.id.word4);
-        mtv5 = findViewById(R.id.word5);
-        mtv6 = findViewById(R.id.word6);
-        mtv7 = findViewById(R.id.word7);
-        mtv8 = findViewById(R.id.word8);
-        mtv9 = findViewById(R.id.word9);
-        mtv0 = findViewById(R.id.word0);
+        // 设置单词数组，后续用数据库作为替代
+        String[] WordContent = {
+                "apple", "banana", "cat", "dog", "fruit", "grape", "house", "island", "jungle", "kite",
+                "lemon", "mountain", "notebook", "ocean", "pencil", "queen", "river", "sunflower", "tiger", "umbrella",
+                "violin", "whale", "xylophone", "yogurt", "zebra", "avocado", "butterfly", "chocolate", "dolphin", "elephant",
+                "fireplace", "giraffe", "horizon", "iceberg", "jackfruit", "kangaroo", "lantern", "marathon", "nectar", "octopus",
+                "penguin", "quasar", "rainbow", "snowflake", "tornado", "universe", "volcano", "windmill", "xenon", "yacht"
+        };
 
+        for (int i=0; i < mWords.size(); i++) {
+            Word mword = new Word();
+            mword.setNum(i);
+            mword.setWord(WordContent[i]);
+            mword.setIsFinished(0);
+            mword.setProficiency(0);
+
+            mWords.set(i, mword);
+        }
+
+        Log.d(TAG,mWords.size() + "*** button1 is clicked ***");
+
+        // 设置单词显示文本框
+        mtv1 = findViewById(R.id.word1);
+        mtv1.setText(WordContent[mLoop * 10]);
+        mtv2 = findViewById(R.id.word2);
+        mtv2.setText(WordContent[mLoop * 10 + 1]);
+        mtv3 = findViewById(R.id.word3);
+        mtv3.setText(WordContent[mLoop * 10 + 2]);
+        mtv4 = findViewById(R.id.word4);
+        mtv4.setText(WordContent[mLoop * 10 + 3]);
+        mtv5 = findViewById(R.id.word5);
+        mtv5.setText(WordContent[mLoop * 10 + 4]);
+        mtv6 = findViewById(R.id.word6);
+        mtv6.setText(WordContent[mLoop * 10 + 5]);
+        mtv7 = findViewById(R.id.word7);
+        mtv7.setText(WordContent[mLoop * 10 + 6]);
+        mtv8 = findViewById(R.id.word8);
+        mtv8.setText(WordContent[mLoop * 10 + 7]);
+        mtv9 = findViewById(R.id.word9);
+        mtv9.setText(WordContent[mLoop * 10 + 8]);
+        mtv0 = findViewById(R.id.word0);
+        mtv0.setText(WordContent[mLoop * 10 + 9]);
+
+        // 设置按钮
         mbtn_y1 = findViewById(R.id.btn_y1);
         mbtn_y1.setOnClickListener(this);
 
@@ -368,6 +405,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     * Update  翻页，更新页面中的单词
     * */
     private void Update() {
+        // 按钮状况复原（颜色复原）
         mbtn_y1.setBackgroundColor(Color.parseColor("#F5F5DC"));
         mbtn_n1.setBackgroundColor(Color.parseColor("#F5F5DC"));
         mbtn_y2.setBackgroundColor(Color.parseColor("#F5F5DC"));
@@ -389,6 +427,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mbtn_y0.setBackgroundColor(Color.parseColor("#F5F5DC"));
         mbtn_n0.setBackgroundColor(Color.parseColor("#F5F5DC"));
 
+        // 按钮状态更新
         is1clicked = 0;
         is2clicked = 0;
         is3clicked = 0;
@@ -400,17 +439,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         is9clicked = 0;
         is0clicked = 0;
 
-        //这里后面换成数据库的单词
-        mtv1.setText("Apples");
-        mtv2.setText("Banana");
-        mtv3.setText("Cat");
-        mtv4.setText("Dog");
-        mtv5.setText("Eat");
-        mtv6.setText("Fat");
-        mtv7.setText("Google");
-        mtv8.setText("Happy");
-        mtv9.setText("I");
-        mtv0.setText("Jam");
+        mLoop = mLoop + 1;
+
+        // 单词显示更新
+        mtv1.setText(mWords.get(mLoop * 10).getWord());
+        mtv2.setText(mWords.get(mLoop * 10 + 1).getWord());
+        mtv3.setText(mWords.get(mLoop * 10 + 2).getWord());
+        mtv4.setText(mWords.get(mLoop * 10 + 3).getWord());
+        mtv5.setText(mWords.get(mLoop * 10 + 4).getWord());
+        mtv6.setText(mWords.get(mLoop * 10 + 5).getWord());
+        mtv7.setText(mWords.get(mLoop * 10 + 6).getWord());
+        mtv8.setText(mWords.get(mLoop * 10 + 7).getWord());
+        mtv9.setText(mWords.get(mLoop * 10 + 8).getWord());
+        mtv0.setText(mWords.get(mLoop * 10 + 9).getWord());
     }
 
 

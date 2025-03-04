@@ -12,37 +12,32 @@ import java.util.List;
 
 public class UserDao {
 
+    private Connection mConnection;
     private static final String TAG = "UserDao";
 
     // 数据库初始化，即建立与数据库的连接
-    public Connection getConnection() {
-        Connection connection = null;
-        try {
-            connection = JDBCUtil.getInstance().getConnection();
-        } catch (Exception e) {
-            Log.e("jdbc", "Database connection error: " + e.getMessage());
+    public void getConnection() {
+        if (mConnection == null) {
+            try {
+                mConnection = JDBCUtil.getInstance().getConnection();
+            } catch (Exception e) {
+                Log.e("jdbc", "Database connection error: " + e.getMessage());
+            }
         }
-        return connection;
     }
 
     // 获取数据库中用户
     public List<User> getUsers(){
 
         List<User> userList = new ArrayList<>();
-        Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
 
         try {
-            connection = getConnection();
-            if (connection == null) {
-                Log.e(TAG, "connection is null");
-                return null;
-            }
 
             // sql = "select * from 表";
             String sql = "select * from word";
-            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement = mConnection.prepareStatement(sql);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 // 注意与数据库字段一一对应
@@ -64,7 +59,6 @@ public class UserDao {
             try {
                 if (resultSet != null) resultSet.close();
                 if (preparedStatement != null) preparedStatement.close();
-//                if (connection != null) connection.close();
             } catch (Exception e) {
                 Log.e("jdbc", "Error closing connection: " + e.getMessage());
             }
@@ -72,21 +66,16 @@ public class UserDao {
         return userList;
     }
 
+    // 增添数据库新用户
     public void setUsers(String username, String password){
 
-        Connection connection = null;
         PreparedStatement preparedStatement = null;
 
         try {
-            connection = getConnection();
-            if (connection == null) {
-                Log.e(TAG, "connection is null");
-                return;
-            }
 
             // sql = "select * from 表";
             String sql = "INSERT INTO word (username, password) VALUES (?, ?)";
-            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement = mConnection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
 
@@ -106,10 +95,10 @@ public class UserDao {
         }
     }
 
+    // 关闭与数据库的连接
     public void closeConnection() {
-        Connection connection = getConnection();
         try {
-            if (connection != null) connection.close();
+            if (mConnection != null) mConnection.close();
         } catch (Exception e) {
             Log.e("jdbc", "Error closing connection: " + e.getMessage());
         }

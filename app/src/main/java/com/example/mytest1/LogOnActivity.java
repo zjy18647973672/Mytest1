@@ -84,6 +84,8 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void run() {
                 UserDao userDao = new UserDao();
+                userDao.getConnection();
+
                 List<User> userList = new ArrayList<>();
 
                 userList = userDao.getUsers();

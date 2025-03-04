@@ -53,6 +53,7 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
         }
         if (v.getId() == R.id.btn_remember) {
             Log.d(TAG, "*** ... is clicked ***");
+
         }
         if (v.getId() == R.id.btn_go_register) {
             Log.d(TAG, "*** ... is clicked ***");
@@ -63,10 +64,27 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
         }
         if (v.getId() == R.id.btn_log_on) {
             Log.d(TAG, "*** ... is clicked ***");
+
+            // 加载数据库
+            login(v);
+
             Intent intent=new Intent(LogOnActivity.this, MainActivity.class);
             startActivityForResult(intent,1);//返回请求结果，请求码为1
             finish();
         }
+
     }
+
+
+    public void login(View view){
+        new Thread(){
+            @Override
+            public void run() {
+                UserDao userDao = new UserDao();
+                userDao.getUsers();
+            }
+        }.start();
+    }
+
 
 }

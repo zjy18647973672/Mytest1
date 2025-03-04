@@ -6,33 +6,45 @@ import android.util.Log;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserDao {
 
-    public void test(){
+    private static final String TAG = "UserDao";
+
+    public void getUsers(){
+
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+
         try {
-            Connection connection = JDBCUtil.getInstance().getConnection();
+            connection = JDBCUtil.getInstance().getConnection();
             // sql = "select * from 表";
             String sql = "select * from word";
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            ResultSet resultSet = preparedStatement.executeQuery();
+            preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 // 注意与数据库字段一一对应
-                int userId = resultSet.getInt("user_id");
+                int Id = resultSet.getInt("id");
                 String usr = resultSet.getString("username");
                 String pwd = resultSet.getString("password");
-                String role = resultSet.getString("role");
                 // 处理每一行数据，您可以根据需求进行相应的操作
-                System.out.println("user: " + userId);
-                System.out.println("username: " + usr);
-                System.out.println("password: " + pwd);
-                System.out.println("role: " + role);
+                Log.d(TAG, "Id: " + Id);
+                Log.d(TAG, "username: " + usr);
+                Log.d(TAG, "password: " + pwd);
             }
-            resultSet.close();
-            preparedStatement.close();
         } catch (Exception e) {
             System.out.println(e);
-            Log.e("jdbc",e.getMessage());
+            Log.e("jdbc", "Error fetching users: " + e.getMessage());
+        } finally {
+            try {
+                if (resultSet != null) resultSet.close();
+                if (preparedStatement != null) preparedStatement.close();
+                if (connection != null) connection.close();
+            } catch (Exception e) {
+                Log.e("jdbc", "Error closing connection: " + e.getMessage());
+            }
         }
     }
 }

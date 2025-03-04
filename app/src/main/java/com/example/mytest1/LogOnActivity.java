@@ -56,6 +56,9 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
         }
         if (v.getId() == R.id.btn_go_register) {
             Log.d(TAG, "*** ... is clicked ***");
+            Intent intent=new Intent(LogOnActivity.this, RegisterActivity.class);
+            startActivityForResult(intent,1);//返回请求结果，请求码为1
+
         }
         if (v.getId() == R.id.btn_log_on) {
             Log.d(TAG, "*** ... is clicked ***");

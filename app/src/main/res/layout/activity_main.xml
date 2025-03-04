@@ -14,7 +14,6 @@
 
         <TextView
             android:id="@+id/word1"
-            android:text="APPLE"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"/>
@@ -24,18 +23,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word1"
+            android:layout_toEndOf="@id/word1"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y1"
+            android:layout_toEndOf="@id/btn_y1"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -49,7 +48,6 @@
             android:id="@+id/word2"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD2"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -57,18 +55,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word2"
+            android:layout_toEndOf="@id/word2"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y2"
+            android:layout_toEndOf="@id/btn_y2"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -82,7 +80,6 @@
             android:id="@+id/word3"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD3"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -90,18 +87,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word3"
+            android:layout_toEndOf="@id/word3"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y3"
+            android:layout_toEndOf="@id/btn_y3"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -115,7 +112,6 @@
             android:id="@+id/word4"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD4"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -123,18 +119,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word4"
+            android:layout_toEndOf="@id/word4"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y4"
+            android:layout_toEndOf="@id/btn_y4"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -148,7 +144,6 @@
             android:id="@+id/word5"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD5"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -156,18 +151,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word5"
+            android:layout_toEndOf="@id/word5"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y5"
+            android:layout_toEndOf="@id/btn_y5"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -181,7 +176,6 @@
             android:id="@+id/word6"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD6"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -189,18 +183,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word6"
+            android:layout_toEndOf="@id/word6"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y6"
+            android:layout_toEndOf="@id/btn_y6"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -214,7 +208,6 @@
             android:id="@+id/word7"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD7"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -222,18 +215,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word7"
+            android:layout_toEndOf="@id/word7"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y7"
+            android:layout_toEndOf="@id/btn_y7"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -247,7 +240,6 @@
             android:id="@+id/word8"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD8"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -255,18 +247,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word8"
+            android:layout_toEndOf="@id/word8"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y8"
+            android:layout_toEndOf="@id/btn_y8"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -280,7 +272,6 @@
             android:id="@+id/word9"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD9"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -288,18 +279,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word9"
+            android:layout_toEndOf="@id/word9"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y9"
+            android:layout_toEndOf="@id/btn_y9"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
@@ -313,7 +304,6 @@
             android:id="@+id/word0"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="WORD10"
             android:layout_marginTop="10dp"/>
 
         <android.widget.Button
@@ -321,18 +311,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="true"
-            android:layout_toRightOf="@id/word0"
+            android:layout_toEndOf="@id/word0"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <android.widget.Button
             android:id="@+id/btn_n0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="false"
-            android:layout_toRightOf="@id/btn_y0"
+            android:layout_toEndOf="@id/btn_y0"
             android:background="#F5F5DC"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 

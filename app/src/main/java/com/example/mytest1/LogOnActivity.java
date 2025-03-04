@@ -87,6 +87,10 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
                 List<User> userList = new ArrayList<>();
 
                 userList = userDao.getUsers();
+                userDao.setUsers("test", "001");
+                userDao.getUsers();
+
+                userDao.closeConnection();
             }
         }.start();
     }

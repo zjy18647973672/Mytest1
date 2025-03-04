@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         if (v.getId() == R.id.btn_register) {
             Log.d(TAG, "*** ... is clicked ***");
-            login(v); // 加载数据库
+            initDB(v); // 加载数据库
         }
         if (v.getId() == R.id.btn_back) {
             Log.d(TAG, "*** ... is clicked ***");
@@ -46,12 +46,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    public void login(View view){
+    public void initDB(View view){
         new Thread(){
             @Override
             public void run() {
                 UserDao userDao = new UserDao();
-                userDao.getUsers();
+                userDao.getConnection();
             }
         }.start();
     }

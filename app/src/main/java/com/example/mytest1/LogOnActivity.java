@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LogOnActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -66,7 +69,7 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
             Log.d(TAG, "*** ... is clicked ***");
 
             // 加载数据库
-            login(v);
+            initDB(v);
 
             Intent intent=new Intent(LogOnActivity.this, MainActivity.class);
             startActivityForResult(intent,1);//返回请求结果，请求码为1
@@ -76,12 +79,14 @@ public class LogOnActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-    public void login(View view){
+    public void initDB(View view){
         new Thread(){
             @Override
             public void run() {
                 UserDao userDao = new UserDao();
-                userDao.getUsers();
+                List<User> userList = new ArrayList<>();
+
+                userList = userDao.getUsers();
             }
         }.start();
     }
